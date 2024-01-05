@@ -1,7 +1,7 @@
 # SyntheticAiVoice
 **Dataset**
   - ASVspoof 2021 (LA) (Dataset ขนาดใหญ่ที่เอาไว้แข่ง จะมีเสียงคนพูดจริงกับเสียงปลอมที่ถูกสร้างขึ้นในอัตราประมาณ 1:9 ประมาณ 60,000 ไฟล์ หรือ 7.23 GB)
-  - เสียงภาษาไทยจาก Mozilla (ของจริง)
+  - https://commonvoice.mozilla.org/th/datasets เสียงภาษาไทยจาก Mozilla (ของจริง)
   - เสียงภาษาไทย TTS (ของปลอม)
   - Noise Dataset
 
