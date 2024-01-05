@@ -29,6 +29,9 @@
 **Baseline**
   - https://github.com/asvspoof-challenge/2021
     
+    ![image](https://github.com/TakdanaiG/SyntheticAiVoice/assets/112264938/ac0a47b2-ce93-4e3e-834e-888c3757f179)
+
+
 **Deploy** (คาดว่า)
   - HTML, CSS, FLASK
 
