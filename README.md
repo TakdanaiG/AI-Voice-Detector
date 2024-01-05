@@ -24,8 +24,11 @@
 
 **Metric**
   - t-DCF
-  - EER
+  - EER (Target < 10%)
 
+**Baseline**
+  - https://github.com/asvspoof-challenge/2021
+    
 **Deploy** (คาดว่า)
   - HTML, CSS, FLASK
 
