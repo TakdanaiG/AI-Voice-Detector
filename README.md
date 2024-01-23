@@ -18,7 +18,7 @@
 
 
     
-**Method**
+**Classifier**
 
   - Rawnet (CRNN)
   - Wavenet
