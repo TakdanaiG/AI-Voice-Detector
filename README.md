@@ -7,8 +7,9 @@
 
 **Feature**
   - Raw
-  - MFCC
-  - Spectrogram
+  - Mel spectogram
+  - Mel Frequency Cepstral Coefficient(MFCC)
+  - Short-Time Fourier Transform (STFT)
 
 **Method**
 
