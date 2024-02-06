@@ -12,9 +12,9 @@
     - Short-Time Fourier Transform (STFT)
 
   - **Feature Extractor**
-    - Wav2vec
-    - VGGish
-    - OpenL3
+    - facebook/mms-lid-126
+    - superb/wav2vec2-base-superb-sid
+    - MIT/ast-finetuned-audioset-10-10-0.4593
 
 
     
@@ -22,7 +22,6 @@
 
   - Rawnet (CRNN)
   - Wavenet
-  - Sample CNN
   - DNN
   - LSTM, RNN
   - CNN
