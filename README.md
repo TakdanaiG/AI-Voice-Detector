@@ -9,13 +9,12 @@
   - **Handcrafted Feature**
     - Mel spectrogram
     - Mel Frequency Cepstral Coefficient (MFCC)
-    - Short-Time Fourier Transform (STFT)
+    - Formant Frequencies
 
   - **Feature Extractor**
+    - VGGish
     - facebook/mms-lid-126
-    - superb/wav2vec2-base-superb-sid
     - MIT/ast-finetuned-audioset-10-10-0.4593
-
 
     
 **Classifier**
