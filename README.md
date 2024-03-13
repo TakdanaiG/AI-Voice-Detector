@@ -1,44 +1,59 @@
-# SyntheticAiVoice
-**Dataset**
-  - https://drive.google.com/drive/folders/1-6SszeC3unvNlZF2nJWoVhn0RpN6tAF1?usp=sharing ASVspoof 2021 (LA) (Dataset ขนาดใหญ่ที่เอาไว้แข่ง จะมีเสียงคนพูดจริงกับเสียงปลอมที่ถูกสร้างขึ้น (ปลอม 90%, จริง 10%) 60,000 ไฟล์ หรือ 7.23 GB)
-  - https://commonvoice.mozilla.org/th/datasets เสียงภาษาไทยจาก Mozilla (ของจริง) 10000 ไฟล์
-  - เสียงภาษาไทย TTS (ของปลอม) 10000 ไฟล์
+# AI Voice Detector
+- The system focuses on comparing metric outputs from Transformer models.
 
-**Feature**
+## Dataset
 
-  - **Handcrafted Feature**
-    - Mel spectrogram
-    - Mel Frequency Cepstral Coefficient (MFCC)
-    - Formant Frequencies
+### English
+- [ASVspoof 2021](https://www.asvspoof.org/index2021.html) (Large-scale dataset used for AI voice detection competitions, containing both genuine and spoofed voices, totaling over 60,000 files or 7.23 GB)
+  
+### Thai
+- [Mozilla Common Voice Corpus 16.1](https://commonvoice.mozilla.org/th/datasets) (First Validated 10000 Files) (Bonafide)
+- [AI For Thai](https://aiforthai.in.th/corpus.php) (Spoof)
+  - **Text-to-Speech**: 1000 Files
+  - **F0-10**: 1000 Files
+  - **F0-40**: 1000 Files
+  - **F0-160**: 1000 Files
+  - **F0-320**: 1000 Files
+  - **Pitch-Shift +4%**: 1000 Files
+  - **Pitch-Shift +10%**: 1000 Files
+  - **Pitch-Shift +20%**: 1000 Files
+  - **Pitch-Shift -4%**: 1000 Files
+  - **Pitch-Shift -10%**: 1000 Files
+  - **Pitch-Shift -20%**: 1000 Files
 
-  - **Feature Extractor**
-    - VGGish
-    - facebook/mms-lid-126
-    - MIT/ast-finetuned-audioset-10-10-0.4593
+  **Total: 11000 Files**
 
-    
-**Classifier**
+## Feature
 
-  - Rawnet (CRNN)
-  - Wavenet
-  - DNN
-  - LSTM, RNN
-  - CNN
-  - GMM
-  - HMM
+- **Handcrafted Feature**
+  - LFCC
 
-**Metric**
-  - t-DCF
-  - EER (Target < 10%)
+- **Feature Extractor**
+  - VGGish
+  - Wav2vec (facebook/mms-lid-126)
+  - AST (MIT/ast-finetuned-audioset-10-10-0.4593)
 
-**Baseline**
-  - https://github.com/asvspoof-challenge/2021
-    
-    ![image](https://github.com/TakdanaiG/SyntheticAiVoice/assets/112264938/ac0a47b2-ce93-4e3e-834e-888c3757f179)
+## Classifier
+- RawNet2
 
+## Metric
+- accuracy
+- t-DCF
+- EER (Target < 10%)
 
-**Deploy** 
-  - HTML, CSS, FLASK
+## Baseline
 
-**Cloud**
-  - AWS
+- [ASVspoof Challenge 2021](https://github.com/asvspoof-challenge/2021)
+
+  ![Baseline](https://github.com/TakdanaiG/SyntheticAiVoice/assets/112264938/ac0a47b2-ce93-4e3e-834e-888c3757f179)
+
+## Deploy
+- ?
+
+## Cloud
+- ?
+
+## Web Example
+- https://aivoicedetector.com/
+- https://play.ht/voice-classifier-detect-ai-voices/
+- https://elevenlabs.io/ai-speech-classifier
