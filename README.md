@@ -34,6 +34,8 @@
 ## Baseline
 
 - [ASVspoof Challenge 2021](https://github.com/asvspoof-challenge/2021)
+ ![Baseline Score](base-line-score.png)
+
 
 
 
